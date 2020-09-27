@@ -1,0 +1,10 @@
+[Unit]
+Description=Encrypt service
+After=network.target
+
+[Service]
+ExecStart=/home/$USER/GSWL_4/Src/Encrypt.service
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
