@@ -1,0 +1,10 @@
+[Unit]
+Description=Decrypt service
+After=network.target
+
+[Service]
+ExecStart=/home/$USER/GSWL_4/Src/Decrypt.service
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
